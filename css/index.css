@@ -16,6 +16,7 @@
 
 #search_box {
     display: inline;
+    margin-right: 2%;
 }
 
 #btn-clear {
@@ -34,4 +35,53 @@
 #jheader {
     float: right;
     color: white;
+}
+
+.logo-container {
+    align-items: center;
+    margin-left: 15%;
+}
+
+#logo1 {
+    height: 140px;
+    width: 170px;
+    margin-left: 100px;
+}
+
+#logo2 {
+    height: 160px;
+    width: 230px;
+    margin-left: 80px;
+}
+
+#logo3 {
+    height: 140px;
+    width: 250px;
+    margin-left: 80px;
+    margin-top: 4px;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 40px;
+}
+
+#footer-menu {
+    background-color: #03849e;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #E0F1F2;
+    padding: 1px 1px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.footer-text {
+    text-align: center;
+    color: black;
 }
