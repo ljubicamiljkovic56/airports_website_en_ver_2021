@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Air Service</title>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/64adfe2067.js" crossorigin="anonymous"></script>
+        <script src="js/flights.js"></script>
+        <link rel="stylesheet" href="css/flights.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="icon" href="pictures/favicon.ico">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 rounded">
+                    <!-- navigation bar -->
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+                        <img>
+                            <i class="fas fa-plane-departure"></i>
+                        </img>
+                        <a class="navbar-brand" href="index.html">Air Service</a>
+                        <!-- links in navigation bar -->
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="flights.html" class="nav-link active">Flights</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="airlines.html" class="nav-link">Airlines</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about-us.html" class="nav-link">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="registration.html" class="nav-link">Registration</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="login.html" class="nav-link">Log in</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="reservation.html" class="nav-link">Ticket reservation</a>
+                            </li>
+                        </ul>
+                        <!-- search bar -->
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" id="form-control" type="search" placeholder="Search the website" aria-label="Search">
+
+                            <button class="btn btn-outline-success my-2 my-sm-0" id="search_box" type="submit">
+                                <i class="fas fa-search"></i>Search
+                            </button>
+                            <button class="btn btn-danger" id="btn_clear" type="button">
+                                <i class="fas fa-times"></i>Cancel
+                            </button>
+                        </form>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="bg-light p-5 rounded m-2" id="flightsJumbotron">
+                        <table class="table table-hover">
+                            <h1>Flights</h1>
+                            <thead>
+                                <tr>
+                                    <th>Number</th>
+                                    <th>Date of departure</th>
+                                    <th>Date of arrival</th>
+                                    <th>Departure airport</th>
+                                    <th>Arrival airport</th>
+                                    <th>Seat number</th>
+                                    <th>Ticket price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>22.12.2021.</td>
+                                    <td>22.12.2021.</td>
+                                    <td>KLIA Kuala Lumpur</td>
+                                    <td>Narita Tokyo</td>
+                                    <td>13</td>
+                                    <td>12.000</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <th scope="row">2</th>
+                                <td>26.12.2021.</td>
+                                <td>26.12.2021.</td>
+                                <td>Nikola Tesla Belgrade</td>
+                                <td>Capitol Airport Beijing</td>
+                                <td>14</td>
+                                <td>51.000</td>
+                            </tbody>
+                            <tbody>
+                                <th scope="row">3</th>
+                                <td>02.01.2022.</td>
+                                <td>02.01.2022.</td>
+                                <td>Kansai Osaka</td>
+                                <td>Changi Singapore</td>
+                                <td>15</td>
+                                <td>20.000</td>
+                            </tbody>
+                            <tbody>
+                                <th scope="row">4</th>
+                                <td>08.02.2022.</td>
+                                <td>09.02.2022.</td>
+                                <td>Nikola Tesla Belgrade</td>
+                                <td>Pudong Shanghai</td>
+                                <td>16</td>
+                                <td>54.000</td>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="bg-light p-5 rounded m-2" id="let1">
+                        <table class="table table-hover">
+                            <thead>
+                                <h1>Kuala Lumpur - Tokyo</h1>
+                                <tr>
+                                    <th>
+                                        <h2>13:15 - 1h 30m - 15:45</h2>
+                                    </th>
+                                    <th><button class="button1" id="button1">
+                                        <p class="pb1"><b>ECONOMIC</b></p>
+                                        <p class="pb2">12.000</p>
+                                    </button></th>
+                                    <th><button class="button2" id="button2">
+                                        <p class="pb2"><b>BUSINESS</b></p>
+                                        <p class="pb2">22.000</p>
+                                    </button>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th>Date of departure</th>
+                                    <th>Date of arrival</th>
+                                    <th>Airlines</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Thursday, 22.12.2021.</td>
+                                    <td>Thursday, 22.12.2021.</td>
+                                    <td>Air Asia</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="bg-light p-5 rounded m-2" id="let1">
+                        <table class="table table-hover">
+                            <thead>
+                                <h1>Belgrade - Beijing</h1>
+                                <th>
+                                    <h2>13:15 - 5h10m - 18:25</h2>
+                                </th>
+                                <th>
+                                    <button class="button1" id="button1">
+                                        <p class="pb1"><b>ECONOMIC</b></p>
+                                        <p class="pb2">51.000</p>
+                                    </button>
+                                </th>
+                                <th>
+                                    <button class="button1" id="button2">
+                                        <p class="pb2"><b>BUSINESS</b></p>
+                                        <p class="pb2">100.000</p>
+                                    </button>
+                                </th>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th>Date of departure</th>
+                                    <th>Date of arrival</th>
+                                    <th>Airlines</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sunday, 26.12.2021.</td>
+                                    <td>Sunday, 26.12.2021.</td>
+                                    <td>Air Serbia</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="bg-light p-5 rounded m-2" id="let1">
+                        <table class="table table-hover">
+                            <thead>
+                                <h1>Kansai - Singapore</h1>
+                            <tr>
+                                <th>
+                                    <h2>14:00 - 1h30m - 15:30</h2>
+                                </th>
+                                <th><button class="button1" id="button1">
+                                        <p class="pb1"><b>ECONOMIC</b></p>
+                                        <p class="pb2">20.000</p>
+                                    </button></th>
+                                <th><button class="button1" id="button2">
+                                        <p class="pb2"><b>BUSINESS</b></p>
+                                        <p class="pb2">40.000</p>
+                                    </button></th>
+                            </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th>Date of departure</th>
+                                    <th>Date of arrival</th>
+                                    <th>Airlines</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sunday, 02.01.2022.</td>
+                                    <td>Sunday, 02.01.2022.</td>
+                                    <td>Air Asia</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="bg-light p-5 rounded m-2" id="let1">
+                        <table class="table table-hover">
+                            <thead>
+                                <h1>Belgrade - Shanghai</h1>
+                                <tr>
+                                    <th>
+                                        <h2>20:00 - 5h30m - 01:30</h2>
+                                    </th>
+                                    <th><button class="button1" id="button1">
+                                            <p class="pb1"><b>ECONOMIC</b></p>
+                                            <p class="pb2">54.000</p>
+                                        </button></th>
+                                    <th><button class="button1" id="button2">
+                                            <p class="pb2"><b>BUSINESS</b></p>
+                                            <p class="pb2">108.000</p>
+                                        </button></th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th>Date of departure</th>
+                                    <th>Date of arrival</th>
+                                    <th>Airlines</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Wednesday, 08.02.2022.</td>
+                                    <td>Thursday, 09.02.2022.</td>
+                                    <td>Air Serbia</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-container" id="footer-menu">
+                <div class="row">
+                  <div class="col-md-3">
+                    <h6 class="text-uppercase text-light">
+                      <i class="fas fa-plane-departure"></i> Air Service
+                    </h6>
+                    <p class="text-light">Air Service is a information delivery platform about available flights to Asia.</p>
+                  </div>
+                  <div class="col-md-2">
+                    <h6 class="text-uppercase text-light"></h6>
+                    <p><a href="#" class="text-reset"></a></p>
+                    <p><a href="#" class="text-reset"></a></p>
+                    <p><a href="#" class="text-reset"></a></p>
+                    <p><a href="#" class="text-reset"></a></p>
+                  </div>
+            
+                  <div class="col-md-3">
+                    <h6 class="text-uppercase fw-bold mb-4 text-light">Services</h6>
+                    <p><a href="#" class="text-light">Pricelist</a></p>
+                    <p>
+                      <a href="#" class="text-light">FAQ</a>
+                    </p>
+                    <p>
+                      <a href="#" class="text-light">Notices</a>
+                    </p>
+                    <p>
+                      <a href="#" class="text-light">Help</a>
+                    </p>
+                  </div>
+                  <div class="col-md-4">
+                    <h6 class="text-uppercase fw-bold mb-4 text-light">Contact</h6>
+                    <p class="text-light"><i class="fas fa-home text-light"></i> Belgrade, Petra Petrovića 13, Serbia</p>
+                    <p class="text-light"><i class="fas fa-envelope text-light"></i> air.service@example.com</p>
+                    <p class="text-light"><i class="fas fa-phone text-light"></i> + 381 112 345 67</p>
+                    <p class="text-light"><i class="fas fa-print text-light"></i> + 381 641 234 56</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer">
+                        <p class="footer-text">Copyright 2022 &copy; Lj.M.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.form-inline {
+    display: flex;
+    align-items: center;
+}
+
+#form-control {
+    display: inline;
+    width: 50%;
+    margin-right: 3%;
+}
+
+#search_box {
+    display: inline;
+    margin-right: 2%;
+}
+
+#btn-clear {
+    display: inline;
+    margin-left: 3%;
+}
+
+.button1, .button2 {
+    height: 120px;
+    width: 250px;
+    background-color: #A8C9EB;
+}
+
+.pb1 {
+    font-style: oblique;
+    color: azure;
+}
+
+.pb2 {
+    font-style: normal;
+}
+
+
+#footer-menu {
+    background-color: #03849e;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #E0F1F2;
+    padding: 1px 1px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.footer-text {
+    text-align: center;
+    color: black;
+}
