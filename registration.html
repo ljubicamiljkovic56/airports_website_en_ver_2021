@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Air Service</title>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="js/registration.js"></script>
+        <script src="https://kit.fontawesome.com/64adfe2067.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/registration.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="icon" href="pictures/favicon.ico">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 rounded">
+                    <!-- navigation bar -->
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+                        <img>
+                            <i class="fas fa-plane-departure"></i>
+                        </img>
+                        <a class="navbar-brand" href="index.html">Air Service</a>
+                        <!-- links in navigation bar -->
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="flights.html" class="nav-link">Flights</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="airlines.html" class="nav-link">Airlines</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about-us.html" class="nav-link">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="registration.html" class="nav-link active">Registration</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="login.html" class="nav-link">Log in</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="reservation.html" class="nav-link">Ticket reservation</a>
+                            </li>
+                        </ul>
+                        <!-- search bar -->
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" id="form-control" type="search" placeholder="Search the website" aria-label="Search">
+
+                            <button class="btn btn-outline-success my-2 my-sm-0" id="search_box" type="submit">
+                                <i class="fas fa-search"></i>Search
+                            </button>
+                            <button class="btn btn-danger" id="btn_clear" type="button">
+                                <i class="fas fa-times"></i>Cancel
+                            </button>
+                        </form>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <form action="#" class="registration" id="regForm" method="POST">
+                            <br>
+                            <br>
+                            <p class="text-center">In order to reserve tickets on our website, you need to register.</p>
+                            <p class="text-center">After registration, you can log in and reserve tickets with your username and password.</p>
+                            <br>
+                            <br>
+                            <label for="fname" id="fname_label">First name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+                            <label for="lname" id="lname_label">Last name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+                            <label for="email" id="email_label">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your e-mail address">
+                            <label for="username" id="username_label">Username</label>
+                            <input type="text" id="username" name="username" placeholder="Enter your username">
+                            <label for="password" id="password_label">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Enter your password">
+                            <input type="submit" value="Send" id="submit_button">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-container" id="footer-menu">
+                <div class="row">
+                  <div class="col-md-3">
+                    <h6 class="text-uppercase text-light">
+                      <i class="fas fa-plane-departure"></i> Air Service
+                    </h6>
+                    <p class="text-light">Air Service is a information delivery platform about available flights to Asia.</p>
+                  </div>
+                  <div class="col-md-2">
+                    <h6 class="text-uppercase text-light"></h6>
+                    <p><a href="#" class="text-reset"></a></p>
+                    <p><a href="#" class="text-reset"></a></p>
+                    <p><a href="#" class="text-reset"></a></p>
+                    <p><a href="#" class="text-reset"></a></p>
+                  </div>
+            
+                  <div class="col-md-3">
+                    <h6 class="text-uppercase fw-bold mb-4 text-light">Services</h6>
+                    <p><a href="#" class="text-light">Pricelist</a></p>
+                    <p>
+                      <a href="#" class="text-light">FAQ</a>
+                    </p>
+                    <p>
+                      <a href="#" class="text-light">Notices</a>
+                    </p>
+                    <p>
+                      <a href="#" class="text-light">Help</a>
+                    </p>
+                  </div>
+                  <div class="col-md-4">
+                    <h6 class="text-uppercase fw-bold mb-4 text-light">Contact</h6>
+                    <p class="text-light"><i class="fas fa-home text-light"></i> Belgrade, Petra Petrovića 13, Serbia</p>
+                    <p class="text-light"><i class="fas fa-envelope text-light"></i> air.service@example.com</p>
+                    <p class="text-light"><i class="fas fa-phone text-light"></i> + 381 112 345 67</p>
+                    <p class="text-light"><i class="fas fa-print text-light"></i> + 381 641 234 56</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer">
+                        <p class="footer-text">Copyright 2022 &copy; Lj.M.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
