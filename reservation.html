@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Air Service</title>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="js/reservation.js"></script>
+        <script src="https://kit.fontawesome.com/64adfe2067.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/reservation.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="icon" href="pictures/favicon.ico">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 rounded">
+                    <!-- navigation bar -->
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+                        <img>
+                            <i class="fas fa-plane-departure"></i>
+                        </img>
+                        <a class="navbar-brand" href="index.html">Air Service</a>
+                        <!-- links in navigation bar -->
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="flights.html" class="nav-link">Flights</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="airlines.html" class="nav-link">Airlines</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about-us.html" class="nav-link">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="registration.html" class="nav-link">Registration</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="login.html" class="nav-link">Log in</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="reservation.html" class="nav-link active">Ticket reservation</a>
+                            </li>
+                        </ul>
+                        <!-- search bar -->
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" id="form-control" type="search" placeholder="Search the website" aria-label="Search">
+
+                            <button class="btn btn-outline-success my-2 my-sm-0" id="search_box" type="submit">
+                                <i class="fas fa-search"></i>Search
+                            </button>
+                            <button class="btn btn-danger" id="btn_clear" type="button">
+                                <i class="fas fa-times"></i>Cancel
+                            </button>
+                        </form>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="container">
+                    <p class="text-center"></p>
+                    <p class="text-center"></p>
+                    <select class="selectFlight" id="selectFlight">
+                        <option value="Tokyo - Kuala Lumpur">Tokyo - Kuala Lumpur</option>
+                        <option value="Beijing - Belgrade">Beijing - Belgrade</option>
+                        <option value="Singapore - Osaka">Singapore - Osaka</option>
+                        <option value="Shanghai - Belgrade">Shanghai - Belgrade</option>
+                    </select>
+                    <form action="" method="POST" class="submitForm">
+                        <main class="clearfix">
+                            <input type="checkbox" class="S01" id="S01">
+                            <label for="checkbox">S01</label>
+                            <input type="checkbox" class="S02" id="S02">
+                            <label for="checkbox">S02</label>
+                            <input type="checkbox" class="S03" id="S03">
+                            <label for="checkbox">S03</label>
+                        </main>
+                        <main class="clearfix">
+                            <input type="checkbox" class="S04" id="S04">
+                            <label for="checkbox">S04</label>
+                            <input type="checkbox" class="S05" id="S05">
+                            <label for="checkbox">S05</label>
+                            <input type="checkbox" class="S06" id="S06">
+                            <label for="checkbox">S06</label>
+                        </main>
+                        <main class="clearfix">
+                            <input type="checkbox" class="S07" id="S07">
+                            <label for="checkbox">S07</label>
+                            <input type="checkbox" class="S08" id="S08">
+                            <label for="checkbox">S08</label>
+                            <input type="checkbox" class="S09" id="S09">
+                            <label for="checkbox">S09</label>
+                        </main>
+                        <main class="clearfix">
+                            <input type="checkbox" class="S10" id="S10">
+                            <label for="checkbox">S10</label>
+                            <input type="checkbox" class="S11" id="S11">
+                            <label for="checkbox">S11</label>
+                            <input type="checkbox" class="S12" id="S12">
+                            <label for="checkbox">S12</label>
+                        </main>
+                        <main class="clearfix">
+                            <input type="checkbox" class="S13" id="S13">
+                            <label for="checkbox">S13</label>
+                            <input type="checkbox" class="S14" id="S14">
+                            <label for="checkbox">S14</label>
+                            <input type="checkbox" class="S15" id="S15">
+                            <label for="checkbox">S15</label>
+                        </main>
+                        <main class="clearfix">
+                            <input type="checkbox" class="S16" id="S16">
+                            <label for="checkbox">S16</label>
+                            <input type="checkbox" class="S17" id="S17">
+                            <label for="checkbox">S17</label>
+                            <input type="checkbox" class="S18" id="S18">
+                            <label for="checkbox">S18</label>
+                        </main>
+                        <main class="clearfix">
+                            <input type="checkbox" class="S19" id="S19">
+                            <label for="checkbox">S19</label>
+                            <input type="checkbox" class="S20" id="S20">
+                            <label for="checkbox">S20</label>
+                            <input type="checkbox" class="S21" id="S21">
+                            <label for="checkbox">S21</label>
+                        </main>
+                        <main class="clearfix">
+                            <input type="checkbox" class="S22" id="S22">
+                            <label for="checkbox">S22</label>
+                            <input type="checkbox" class="S23" id="S23">
+                            <label for="checkbox">S23</label>
+                            <input type="checkbox" class="S24" id="S24">
+                            <label for="checkbox">S24</label>
+                        </main>
+                        <main class="clearfix">
+                            <input type="checkbox" class="S25" id="S25">
+                            <label for="checkbox">S25</label>
+                            <input type="checkbox" class="S26" id="S26">
+                            <label for="checkbox">S26</label>
+                            <input type="checkbox" class="S27" id="S27">
+                            <label for="checkbox">S27</label>
+                        </main>
+                        <main class="clearfix">
+                            <input type="checkbox" class="S28" id="S28">
+                            <label for="checkbox">S28</label>
+                            <input type="checkbox" class="S29" id="S29">
+                            <label for="checkbox">S29</label>
+                            <input type="checkbox" class="S30" id="S30">
+                            <label for="checkbox">S30</label>
+                        </main>
+                        <main class="clearfix">
+                            <input type="checkbox" class="S31" id="S31">
+                            <label for="checkbox">S31</label>
+                            <input type="checkbox" class="S32" id="S32">
+                            <label for="checkbox">S32</label>
+                            <input type="checkbox" class="S33" id="S33">
+                            <label for="checkbox">S33</label>
+                        </main>
+                        <main class="clearfix">
+                            <input type="checkbox" class="S34" id="S34">
+                            <label for="checkbox">S34</label>
+                            <input type="checkbox" class="S35" id="S35">
+                            <label for="checkbox">S35</label>
+                            <input type="checkbox" class="S36" id="S36">
+                            <label for="checkbox">S36</label>
+                        </main>
+                        <main class="clearfix">
+                            <input type="checkbox" class="S37" id="S37">
+                            <label for="checkbox">S37</label>
+                            <input type="checkbox" class="S38" id="S38">
+                            <label for="checkbox">S38</label>
+                            <input type="checkbox" class="S39" id="S39">
+                            <label for="checkbox">S39</label>
+                        </main>
+                        <main class="clearfix">
+                            <input type="checkbox" class="S40" id="S40">
+                            <label for="checkbox">S40</label>
+                            <input type="checkbox" class="S41" id="S41">
+                            <label for="checkbox">S41</label>
+                            <input type="checkbox" class="S42" id="S42">
+                            <label for="checkbox">S42</label>
+                        </main>
+                        <main class="clearfix">
+                            <input type="checkbox" class="S43" id="S43">
+                            <label for="checkbox">S43</label>
+                            <input type="checkbox" class="S44" id="S44">
+                            <label for="checkbox">S44</label>
+                            <input type="checkbox" class="S45" id="S45">
+                            <label for="checkbox">S45</label>
+                        </main>
+                        <main class="clearfix">
+                            <input type="checkbox" class="S46" id="S46">
+                            <label for="checkbox">S46</label>
+                            <input type="checkbox" class="S47" id="S47">
+                            <label for="checkbox">S47</label>
+                            <input type="checkbox" class="S48" id="S48">
+                            <label for="checkbox">S48</label>
+                        </main>
+                        <main class="clearfix">
+                            <input type="checkbox" class="S49" id="S49">
+                            <label for="checkbox">S49</label>
+                            <input type="checkbox" class="S50" id="S50">
+                            <label for="checkbox">S50</label>
+                            <input type="checkbox" class="S51" id="S51">
+                            <label for="checkbox">S51</label>
+                        </main>
+                        <main class="clearfix">
+                            <input type="checkbox" class="S52" id="S52">
+                            <label for="checkbox">S52</label>
+                            <input type="checkbox" class="S53" id="S53">
+                            <label for="checkbox">S53</label>
+                            <input type="checkbox" class="S54" id="S54">
+                            <label for="checkbox">S54</label>
+                        </main>
+                        <main class="clearfix">
+                            <input type="checkbox" class="S55" id="S55">
+                            <label for="checkbox">S55</label>
+                            <input type="checkbox" class="S56" id="S56">
+                            <label for="checkbox">S56</label>
+                            <input type="checkbox" class="S57" id="S57">
+                            <label for="checkbox">S57</label>
+                        </main>
+                        <main class="clearfix">
+                            <input type="checkbox" class="S58" id="S58">
+                            <label for="checkbox">S58</label>
+                            <input type="checkbox" class="S59" id="S59">
+                            <label for="checkbox">S59</label>
+                            <input type="checkbox" class="S60" id="S60">
+                            <label for="checkbox">S60</label>
+                        </main>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-container" id="footer-menu">
+                <div class="row">
+                  <div class="col-md-3">
+                    <h6 class="text-uppercase text-light">
+                      <i class="fas fa-plane-departure"></i> Air Service
+                    </h6>
+                    <p class="text-light">Air Service is a information delivery platform about available flights to Asia.</p>
+                  </div>
+                  <div class="col-md-2">
+                    <h6 class="text-uppercase text-light"></h6>
+                    <p><a href="#" class="text-reset"></a></p>
+                    <p><a href="#" class="text-reset"></a></p>
+                    <p><a href="#" class="text-reset"></a></p>
+                    <p><a href="#" class="text-reset"></a></p>
+                  </div>
+            
+                  <div class="col-md-3">
+                    <h6 class="text-uppercase fw-bold mb-4 text-light">Services</h6>
+                    <p><a href="#" class="text-light">Pricelist</a></p>
+                    <p>
+                      <a href="#" class="text-light">FAQ</a>
+                    </p>
+                    <p>
+                      <a href="#" class="text-light">Notices</a>
+                    </p>
+                    <p>
+                      <a href="#" class="text-light">Help</a>
+                    </p>
+                  </div>
+                  <div class="col-md-4">
+                    <h6 class="text-uppercase fw-bold mb-4 text-light">Contact</h6>
+                    <p class="text-light"><i class="fas fa-home text-light"></i> Belgrade, Petra Petrovića 13, Serbia</p>
+                    <p class="text-light"><i class="fas fa-envelope text-light"></i> air.service@example.com</p>
+                    <p class="text-light"><i class="fas fa-phone text-light"></i> + 381 112 345 67</p>
+                    <p class="text-light"><i class="fas fa-print text-light"></i> + 381 641 234 56</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer">
+                        <p class="footer-text">Copyright 2022 &copy; Lj.M.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
