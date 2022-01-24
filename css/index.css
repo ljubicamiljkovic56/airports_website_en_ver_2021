@@ -85,3 +85,65 @@
     text-align: center;
     color: black;
 }
+
+@media screen and (min-width:1024px) and (max-width:1500px){
+    navbar {
+        width: 100%;
+
+    }
+
+    .navbar-brand {
+        margin-left:1%;
+
+    }
+
+    nav ul li a {
+        display:inline;
+
+    }
+    #form-control {
+       display:inline;
+    }
+
+    #search_box{
+        display:inline;
+    }
+
+    #btn_clear {
+        display:inline;
+    }
+}
+
+@media screen and (min-width:750px) and (max-width:1024px) {
+    navbar {
+        width:100%;
+    }
+
+    .navbar-brand {
+        text-align: center;
+        align-self:center;
+    }
+
+    nav ul li a {
+       display:inline-block;
+       align-self:center;
+       align-items:center;
+       margin-left:5px;
+        
+    }
+
+    #form-control{
+        display:none;
+    }
+
+    #search_box {
+        display:none
+    }
+
+    #btn_clear {
+        display:none;
+    }
+
+
+
+}
